@@ -13,8 +13,16 @@ input {
     margin-top: 10px;
     font-size: 30px;
     padding: 10px;
-    background: #FF0000;
     border: 0;
     color: #FFFFFF;
     border-radius: 10px;
+}
+.add {
+    background: #FF0000;
+}
+.inf {
+    background: #0000FF;
+}
+.res {
+    background: #00FF00;
 }

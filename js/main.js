@@ -80,7 +80,7 @@ function draw() {
         }
         element.x += element.dx;
         element.y += element.dy;
-        document.getElementById("edit_area").innerHTML = "<p>DVD Counter: " + dvd_list.length + "</p>";
+        document.getElementById("edit_area").innerHTML = "<p>DVD Counter: " + dvd_list.length + "</p><p>Infinity Mode: " + infinity + "</p>";
     });
 }
 setInterval(draw, 10);

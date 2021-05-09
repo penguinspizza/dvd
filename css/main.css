@@ -26,3 +26,6 @@ input {
 .res {
     background: #00FF00;
 }
+#edit_area {
+    text-align: center;
+}

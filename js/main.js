@@ -5,7 +5,7 @@ function getRandomInt(min, max) {
 }
 
 function getRandomColor() {
-    return "#" + getRandomInt(0, 256).toString(16) + getRandomInt(0, 256).toString(16) + getRandomInt(0, 256).toString(16);
+    return "#" + ('00' + getRandomInt(0, 256).toString(16)).slice(-2) + ('00' + getRandomInt(0, 256).toString(16)).slice(-2) + ('00' + getRandomInt(0, 256).toString(16)).slice(-2);
 }
 
 var canvas = document.getElementById("myCanvas"); //htmlをjsで扱う
@@ -21,7 +21,7 @@ class Dvds {
     }
 }
 
-dvd_list = []
+dvd_list = [];
 
 var infinity = false;
 

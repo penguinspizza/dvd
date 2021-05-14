@@ -52,8 +52,8 @@ function drawBall() {
     ctx.font = "48px bold sans-serif";
     ctx.textAlign = "center"
     dvd_list.forEach(function(element){
+        ctx.fillStyle = element.color;        
         ctx.fillText("DVD", element.x, element.y);
-        ctx.fillStyle = element.color;
     });
     ctx.fill();
     ctx.closePath();

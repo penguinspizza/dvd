@@ -28,7 +28,7 @@ var dvd_list = [];
 var infinity = false;
 
 var text = "DVD";
-ctx.font = "48px bold sans-serif";
+ctx.font = "48px Oswald";
 ctx.textAlign = "center"
 var text_info = ctx.measureText(text);
 

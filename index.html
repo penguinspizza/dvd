@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="ja">
 <!-- https://developer.mozilla.org/ja/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@butanokeiton" />
-    <meta name="twitter:creator" content="@butanokeiton" />
-    <meta property="og:url" content="https://penguinspizza.github.io/dvd/" />
-    <meta property="og:title" content="DVDを増やせるサイト" />
-    <meta property="og:description" content="「Add DVD」を押すとDVDが増えます。" />
-    <meta property="og:image" content="https://raw.githubusercontent.com/penguinspizza/dvd/main/img/dvd.png" />
-    <meta name="description" content="「Add DVD」を押すとDVDが増えます。">
-    <title>DVDを増やせるサイト</title>
-    <link rel="stylesheet" href="./css/main.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@butanokeiton" />
+  <meta name="twitter:creator" content="@butanokeiton" />
+  <meta property="og:url" content="https://penguinspizza.github.io/dvd/" />
+  <meta property="og:title" content="DVDを増やせるサイト" />
+  <meta property="og:description" content="「Add DVD」を押すとDVDが増えます。" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/penguinspizza/dvd/main/img/dvd.png" />
+  <meta name="description" content="「Add DVD」を押すとDVDが増えます。">
+  <title>DVDを増やせるサイト</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">DVDを増やせるサイト</a>
+    <a class="nav-link disabled" href="#">v1.0.0</a>
+  </nav>
+  <div class="container">
     <canvas id="myCanvas" width="480" height="320"></canvas>
-    <div id="edit_area"></div>
-    <input type="button" class="add" value="Add DVD" onclick="add_dvd();"/>
-    <input type="button" class="inf" value="Infinity" onclick="inf();"/>
-    <input type="button" class="res" value="Reset" onclick="res();"/>
+    <div class="alert alert-primary text-center width480 center" role="alert">
+      <h4 class="alert-heading">DVDの個数</h4>
+      <div id="edit_area"></div>
+    </div>
+    <div class="width480 center text-center">
+      <button class="btn btn-primary ml-2 mr-2" onclick="add_dvd();">DVDを追加</button>
+      <button class="btn btn-danger ml-2 mr-2" onclick="res();">リセット</button>
+      <div class="custom-control custom-switch m-2">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1" onchange="inf();">
+        <label class="custom-control-label" for="customSwitch1">無限増殖モード<span
+            class="badge badge-warning">高負荷注意！</span></label>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"></script>
     <script type="text/javascript" src="./js/main.js"></script>
 </body>
-</html>  
+
+</html>

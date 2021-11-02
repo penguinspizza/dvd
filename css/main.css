@@ -1,31 +1,38 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 canvas {
-    background: #000;
-    display: block;
-    margin: 0 auto;
+  background: #000;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 input {
-    display: block;
-    margin: 0 auto;
-    margin-top: 10px;
-    font-size: 30px;
-    padding: 10px;
-    border: 0;
-    color: #FFFFFF;
-    border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 30px;
+  padding: 10px;
+  border: 0;
+  color: #ffffff;
+  border-radius: 10px;
 }
 .add {
-    background: #FF0000;
+  background: #ff0000;
 }
 .inf {
-    background: #0000FF;
+  background: #0000ff;
 }
 .res {
-    background: #00FF00;
+  background: #00ff00;
 }
 #edit_area {
-    text-align: center;
+  text-align: center;
+}
+.width480 {
+  width: 480px;
+}
+.center {
+  margin: 20px auto;
 }
